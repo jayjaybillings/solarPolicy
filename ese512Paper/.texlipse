@@ -1,8 +1,8 @@
 #TeXlipse project settings
-#Sat Apr 18 15:49:21 GMT 2015
+#Sat Apr 18 19:12:22 GMT 2015
 markTmpDer=true
 builderNum=2
-outputDir=bin
+outputDir=bin/
 makeIndSty=
 bibrefDir=
 outputFormat=pdf
@@ -11,4 +11,4 @@ mainTexFile=main.tex
 outputFile=ese512_solarPolicy.pdf
 langSpell=en
 markDer=true
-srcDir=src
+srcDir=src/

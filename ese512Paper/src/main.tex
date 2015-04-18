@@ -78,40 +78,71 @@
 %----------------------------------------------------------------------------------------
 %	INTRODUCTION
 %----------------------------------------------------------------------------------------
-\newbibliography{deb}
-\newbibliography{roisin}
-\newbibliography{jay}
-\newbibliography{julie}
-\newbibliography{patrick}
-\newbibliography{chang}
-\newbibliography{eric}
 
 \chapter{The Policy}
 
+\input{policy}
+
 \chapter{Justification}
 
-\input{debbie}
-\input{roisin}
+% ----- Jay ----- %
+\newbibliography{jay}
 \input{jay}
+\bibliographystyle{jay}{ieeetr}
+\bibliography{jay}{jay}{References}
+\clearpage
+
+% ----- Debbie ----- %
+\newbibliography{debbie}
+\input{debbie}
+\bibliographystyle{debbie}{ieeetr}
+\bibliography{debbie}{debbie}{References}
+\clearpage
+
+% ----- Debbie ----- %
+\newbibliography{roisin}
+\input{roisin}
+\bibliographystyle{roisin}{ieeetr}
+\bibliography{roisin}{roisin}{References}
+\clearpage
 
 \chapter{Implementation}
 
+% ----- Julie ----- %
+\newbibliography{julie}
 \input{julie}
+\bibliographystyle{julie}{ieeetr}
+\bibliography{julie}{julie}{References}
+\clearpage
+
+% ----- Patrick ----- %
+\newbibliography{patrick}
 \input{patrick}
+\bibliographystyle{patrick}{ieeetr}
+\bibliography{patrick}{patrick}{References}
+\clearpage
+
+% ----- Eric ----- %
+\newbibliography{eric}
 \input{eric}
+\bibliographystyle{eric}{ieeetr}
+\bibliography{eric}{eric}{References}
+\clearpage
+
+% ----- Chang ----- %
+\newbibliography{chang}
 \input{chang}
-
-
+\bibliographystyle{chang}{ieeetr}
+\bibliography{chang}{chang}{References}
+\clearpage
 
 \chapter{Concluding Remarks}
 
 \chapter*{Appendices}
 
 
-\clearpage
-\bibliographystyle{ieeetr}
-
-\bibliography{solar_policy_refs}
-
+%\clearpage
+%\bibliographystyle{ieeetr}
+%\bibliography{solar_policy_refs}
 \end{document}
 
