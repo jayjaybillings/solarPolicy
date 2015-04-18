@@ -1,29 +1,114 @@
-%%This is a very basic article template.
-%%There is just one section and two subsections.
-\documentclass{article}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% Simple Sectioned Essay Template
+% LaTeX Template
+%
+% This template has been downloaded from:
+% http://www.latextemplates.com
+%
+% Note:
+% The \lipsum[#] commands throughout this template generate dummy text
+% to fill the template out. These commands should all be removed when 
+% writing essay content.
+%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+%----------------------------------------------------------------------------------------
+%	PACKAGES AND OTHER DOCUMENT CONFIGURATIONS
+%----------------------------------------------------------------------------------------
+
+\documentclass[10pt]{book} % Default font size is 12pt, it can be changed here
+
+\usepackage{geometry} % Required to change the page size to A4
+\geometry{a4paper} % Set the page size to be A4 as opposed to the default US Letter
+
+\usepackage{graphicx} % Required for including pictures
+
+\usepackage{float} % Allows putting an [H] in \begin{figure} to specify the exact location of the figure
+\usepackage{wrapfig} % Allows in-line images such as the example fish picture
+
+\usepackage{lipsum} % Used for inserting dummy 'Lorem ipsum' text into the template
+
+\linespread{1.5} % Line spacing
+
+%\setlength\parindent{0pt} % Uncomment to remove all indentation from paragraphs
+
+\graphicspath{{Pictures/}} % Specifies the directory where pictures are stored
 
 \begin{document}
 
-\title{Building a Strong Solar Energy Market through US Government Purchase of
-Photovoltaics}
-\author{Jay Jay Billings\footnote{jbillin4@vols.utk.edu}}
-\author{Foo}
-\maketitle
+%----------------------------------------------------------------------------------------
+%	TITLE PAGE
+%----------------------------------------------------------------------------------------
+
+\begin{titlepage}
+
+\newcommand{\HRule}{\rule{\linewidth}{0.5mm}} % Defines a new command for the horizontal lines, change thickness here
+
+\center % Center everything on the page
+
+\textsc{\LARGE University of Tennessee, Knoxville}\\[1.5cm] % Name of your university/college
+\textsc{\Large ESE 512: Pricing and Policy}\\[0.5cm] % Major heading such as course name
+
+\HRule \\[0.4cm]
+{ \huge \bfseries Creating a Solar Market}\\[0.4cm] % Title of your document
+\HRule \\[1.5cm]
+
+\textsc{\large Jay Billings, Julie Cease, Roisin Langan, Eric Muckley, Patrick Shower and Deborah Weighill}\\[0.5cm] % Minor heading such as course title
 
 
-\section*{Problem 1}
 
-\subsection*{A}
 
-\section{Title}
 
-\subsection{Subtitle}
+{\large \today}\\[3cm] % Date, change the \today to a set date if you want to be precise
 
-Plain text.
+%\includegraphics{Logo}\\[1cm] % Include a department/university logo - this will require the graphicx package
 
-\subsection{Another subtitle}
 
-More plain text.
 
+\end{titlepage}
+
+%----------------------------------------------------------------------------------------
+%	TABLE OF CONTENTS
+%----------------------------------------------------------------------------------------
+
+%\tableofcontents % Include a table of contents
+
+
+%----------------------------------------------------------------------------------------
+%	INTRODUCTION
+%----------------------------------------------------------------------------------------
+
+
+\chapter{The Policy}
+
+\chapter{Justification}
+
+\section{Debbie}
+
+\section{Roisin}
+
+\section{Jay}
+
+\chapter{Implementation}
+
+
+\section{Julie}
+
+\section{Patrick}
+
+\section{Eric}
+
+
+
+\chapter{Concluding Remarks}
+
+\chapter*{Appendices}
+
+
+\clearpage
+\bibliographystyle{ieeetr}
+
+\bibliography{solar_policy_refs}
 
 \end{document}
+
