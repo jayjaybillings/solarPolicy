@@ -4,7 +4,7 @@
 \subsection{Introduction}
 
 In this part of the policy recommendation, we consider a very fundamental 
-question relating to increased penetration of solar energy: Can today’s
+question relating to increased penetration of solar energy: Can today's
 demonstrated energy storage solutions effectively and economically deliver
 power to federal buildings as needed, given the intermittent nature of solar
 power generation? The answer to this question is far from straightforward.
@@ -38,7 +38,7 @@ mechanisms operating on several physical principles (see Figure 1 below).
 
 \begin{figure}
 \begin{center}
-\includegraphics[scale=0.6]{pics/PatrickFigure1.png}
+\includegraphics[scale=1.0]{pics/PatrickFigure1.png}
 \caption{An impressive variety of energy storage mechanism have been studied in
 parallel to the development of renewable energy generation.[1] }
 \label{p1}
@@ -75,7 +75,7 @@ the initial cost of equipment per unit energy of storage. These criteria
 represent a snapshot of how effective and economical a given storage technology
 is for a particular application.
 
-\subsection{Compressed Air}
+\subsubsection{Compressed Air}
 \textbf{Capacity: 3-15 MW}
 
 \noindent\textbf{Round Trip Efficiency: 50 \%}
@@ -102,7 +102,7 @@ be deployable in the timeframe this policy concerns. Only the largest federal
 buildings, or perhaps connected networks of buildings, would be effectively
 served by this solution.
 
-\subsection{Pumped hydro storage}
+\subsubsection{Pumped hydro storage}
 \textbf{Capacity: 100-5000 MW}
 
 \noindent\textbf{Round Trip Efficiency: 75 - 85 \%}
@@ -118,7 +118,7 @@ applicable to any system with a capacity less than 100 MW. Since this excludes
 federal buildings, pumped hydro storage is not applicable to the policy in
 question.
 
-\subsection{Flywheels}
+\subsubsection{Flywheels}
 \textbf{Capacity: .25 MW}
 
 \noindent\textbf{Round Trip Efficiency: 93 - 95 \%}
@@ -142,7 +142,7 @@ discharge more rapidly than most other storage solutions - mean there are niche
 applications could stand to benefit from the large investment.
 
 
-\subsection{Supercapacitors}
+\subsubsection{Supercapacitors}
 \textbf{Capacity: 0-.3 MW}
 
 \noindent\textbf{Round Trip Efficiency: 90 - 95 \%}
@@ -166,10 +166,10 @@ discharge for one hour, so it is unlikely that a single supercapacitor would be
 able to serve the needs of a federal building. The utilization of
 supercapacitors requires advanced power electronics, which add complication and
 expense. Ultimately, their hardiness can justify this expense in extreme
-environments where cheaper forms of storage aren’t reliable.
+environments where cheaper forms of storage aren't reliable.
 
 
-\subsection{Thermal Storage}
+\subsubsection{Thermal Storage}
 \textbf{Capacity: 0-60 MW}
 
 \noindent\textbf{Round Trip Efficiency: 30-60 \%} 
@@ -199,7 +199,7 @@ physical storage system, it has been demonstrated that such systems can be made
 on ``roof-top scale'' for ``micro-utilities'', and these systems are characterized
 by energy densities similar to lithium-ion batteries.
 
-\subsection{Batteries}
+\subsubsection{Batteries}
 \textbf{Capacity: 0-40 MW}
 
 \noindent\textbf{Round Trip Efficiency: 60 - 90 \%}
@@ -214,12 +214,12 @@ between 5 and 13 years if they undergo one cycle per day. This is about half of
 the expected lifetime of storage systems, so there is an increased long-term
 investment related to system upkeep. Furthermore, all the batteries listed
 require either heating or air conditioning to maintain functionality. If
-they’re utilized in an environment that would require a significant amount of
+they're utilized in an environment that would require a significant amount of
 energy to maintain operating temperature, this is yet another associated expense.
 
 One advantage that batteries present is their energy density. Of the solutions
 discussed so far, thermal energy storage has the greatest energy density, at 80
-– 200 watt hours per kilogram. Li-ion batteries have a similar energy density
+- 200 watt hours per kilogram. Li-ion batteries have a similar energy density
 (75 - 200 Wh/kg) while Na-S batteries have an increased energy density (150-240
 Wh/kg), and both are approximately twice as energy efficient as thermal
 storage.
@@ -239,10 +239,10 @@ indicated. Third, special considerations that may impact the choice of a
 storage technology, such as climate, required responsiveness, and limited
 space, were identified and matched with an appropriate technology.
 
-\subsection{Estimating storage demand}
+\subsubsection{Estimating storage demand}
 
 To estimate the needed storage demand, the problem to be solved must first be
-defined. In this case, it’s not so much a matter of evening solar output vary
+defined. In this case, it's not so much a matter of evening solar output vary
 from day to day, but evening it out over the course of the day. The base-line
 utilities know what the basic load profile will look like depending on the
 region and the time of year. If they can predict 24 hours in advance how much
@@ -276,7 +276,7 @@ Therefore, the area under the dashed red line, hightlighted in red, represents
 the total energy storage required to get through the day. For such a geometry,
 the maximum area under the curve will be roughly 56\% of the total energy
 capacity of the PV system, the area under the solid blue line. In terms of
-energy storage, this means that approximately 56\% of a system’s daily output
+energy storage, this means that approximately 56\% of a system's daily output
 must be stored to maintain the integrity of the grid in a ``worst case scenario''
 day.
 
@@ -321,7 +321,8 @@ the maximum output of any given day.
 
 \begin{equation}
 \begin{aligned}
-\frac{output_{max}-(PV output_2+storage output)}{outputmax} &= \\
+\frac{output_{max}-(\text{PV output}_2+\text{storage output})}{output_{max}} &=
+\\
 1-.4\frac{(284.6[K]-2*stddev)^4}{(284.6[K])^4}-\frac{storage}{output_{max}}
 &=.45
 \\
@@ -334,7 +335,7 @@ below.
 
 \begin{figure}
 \begin{center}
-\includegraphics[scale=0.6]{pics/PatrickFigure3.png}
+\includegraphics[scale=1.0]{pics/PatrickFigure3.png}
 \caption{Daily Temperature Variability}
 \label{p3}
 \end{center}
@@ -369,7 +370,7 @@ expected to regenerate:
 
 \begin{figure}
 \begin{center}
-\includegraphics[scale=0.6]{pics/PatrickFigure4.png}
+\includegraphics[scale=1.0]{pics/PatrickFigure4.png}
 \caption{Average Annual Sunshine}
 \label{p4}
 \end{center}
@@ -403,8 +404,7 @@ Capturing the influence of the building location on the necessary storage capaci
 [K])^4}-.45*\frac{hrs_{sun,annual}}{4383})
 \end{equation}
 
-
-\subsection{Evaluation of cost}
+\subsubsection{Evaluation of cost}
 
 The average service life required for photovoltaic panels to pay themselves off
 is 15-25 years. Conveniently, all of the storage mechanisms listed will last 20
@@ -437,7 +437,7 @@ are feasible.
 
 \begin{figure}
 \begin{center}
-\includegraphics[scale=0.6]{pics/PatrickFigure5.png}
+\includegraphics[scale=1.0]{pics/PatrickFigure5.png}
 \caption{20 year cost}
 \label{p5}
 \end{center}
@@ -477,14 +477,14 @@ portion of the total grid input, and the ability of the storage system to
 compensate for PV loss within a few milliseconds is important. In this case,
 flywheels have been demonstrated to have very quick ramp-up and ramp-down rates
 in conjunction with solar systems.
-\item Situations in which temperature extremes are expected and it’s not
-feasible to control the storage system’s environment. Supercapacitors stand out their abity
+\item Situations in which temperature extremes are expected and it's not
+feasible to control the storage system's environment. Supercapacitors stand out their abity
 to operate between -40$\degree$F and 160$\degree$F for long cycle lifetimes.
 \end{itemize}
 
 \subsection{Conclusions}
 
-Can today’s demonstrated energy storage solutions effectively and economically
+Can today's demonstrated energy storage solutions effectively and economically
 deliver power to federal buildings as needed, given the intermittent nature of
 solar power generation? We believe that the data here presented evidences that
 they can. For any given combination of environment and PV capacity, one of two
