@@ -30,6 +30,8 @@
 \usepackage{hyperref}
 \usepackage{amsmath,gensymb}
 
+\usepackage{pdfpages}
+
 \linespread{1.5} % Line spacing
 
 %\setlength\parindent{0pt} % Uncomment to remove all indentation from paragraphs
@@ -133,16 +135,18 @@ Patrick Shower and Deborah Weighill}\\[0.5cm] % Minor heading such as course tit
 \clearpage
 
 % ----- Chang ----- %
-\newbibliography{chang}
-\input{chang}
-\bibliographystyle{chang}{ieeetr}
-\bibliography{chang}{chang}{References}
+\includepdf[pages={-}]{chang.pdf}
 \clearpage
 
 \chapter{Concluding Remarks}
 
-\chapter*{Appendices}
+This policy is a progressive plan forward that is justified morally,
+economically and enviromentally. Furthermore, the practical elements of such a
+plan are easily achieved through implementation plans such as the ones presented
+herein. It is our recommendation that such a policy be adopted with all due
+haste.
 
+\chapter*{Appendices}
 
 %\clearpage
 %\bibliographystyle{ieeetr}
